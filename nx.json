@@ -1,15 +1,8 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
-    "build": {
-      "cache": true,
-      "dependsOn": ["^build"],
-      "inputs": ["production", "^production"]
-    },
-    "test": {
-      "cache": true,
-      "inputs": ["default", "^production"]
-    }
+    "build": { "cache": true, "dependsOn": ["^build"], "inputs": ["production", "^production"] },
+    "test": { "cache": true, "inputs": ["default", "^production"] }
   },
   "namedInputs": {
     "sharedGlobals": [],
@@ -17,5 +10,5 @@
     "production": ["default"]
   },
   "nxCloudUrl": "https://staging.nx.app",
-  "nxCloudId": "6a3ede4ab9b15d82128c7adb"
+  "nxCloudId": "6a3ede8b98e863f8eb336531"
 }
